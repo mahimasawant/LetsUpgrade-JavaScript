@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info</title>
+  </head>
+  <body>
+    <h1>Getting user input using JS function</h1>
+    <input type="text" id="text1" placeholder="enter your name" /><br /><br />
+    <input type="email" id="email" placeholder="enter your email id" /><br />
+    <button onClick="fn1()" type="submit">Submit</button>
+    <script type="text/javascript">
+      function fn1() {
+        var username = document.getElementById("text1").value;
+        var email1 = document.getElementById("email").value;
+
+        alert("Username provided is:" + username + "  email is :" + email1);
+      }
+    </script>
+  </body>
+</html>

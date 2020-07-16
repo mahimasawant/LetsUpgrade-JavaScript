@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional</title>
+  </head>
+  <body>
+    <h1>Check if you are eligible to drink or not</h1>
+    <input type="number" id="age" placeholder="enter your age" />
+    <button onclick="age1()">Check</button>
+    <script>
+      function age1() {
+        var age1 = document.getElementById("age").value;
+        if (age1 < 21) {
+          console.log("Cannot drink");
+        } else {
+          console.log("can drink");
+        }
+      }
+    </script>
+  </body>
+</html>

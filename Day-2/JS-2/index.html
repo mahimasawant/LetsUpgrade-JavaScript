@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methods of String and Array in JavaScript</title>
+  </head>
+  <body>
+    <h1>JavaScript Array Methods</h1>
+    <script>
+      //substring()
+
+      var str = "Upgraders";
+      var res = str.substring(2, 6);
+      console.log(res);
+
+      //splice() used to add new items to an array
+      var colours = ["Blue", "Orange", "red", "green"];
+      colours.splice(2, 0, "yellow", "black");
+      console.log(colours);
+
+      var colours = ["Blue", "Orange", "red", "green", "black"];
+      colours.splice(0, 1); // Removes the first element
+
+      //replace() searches a string for a specified value
+      //returns a new string where the specified values are replaced
+      var str = "lets Upgraders";
+      var res = str.replace("lets", "hii");
+      console.log(res);
+
+      //replaceall() : returns a new string with all matches of a pattern
+      const p = "welcome to learn python";
+      console.log(p.replaceAll("python", "javascript"));
+    </script>
+  </body>
+</html>
