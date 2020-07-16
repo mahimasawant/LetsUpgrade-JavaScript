@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console in JavaScript</title>
+  </head>
+  <body>
+    <h1>Console in JavaScript</h1>
+    <script>
+      // console.log() method
+      console.log("Hi everyone");
+      console.log(10);
+      console.log(true);
+
+      // console.error() method
+      console.error("some error occured");
+
+      // console.warn() method
+      console.warn("This is a warning.");
+
+      // console.time() and console.timeEnd() method
+      console.time("party");
+      let fun = function () {
+        console.log("today is party");
+      };
+      let fun2 = function () {
+        console.log("party is tomorrow");
+      };
+      fun(); // calling fun();
+      fun2(); // calling fun2();
+      console.timeEnd("party");
+
+      // console.table() method
+      console.table({ a: 1, b: 2 });
+
+      // console.count() method
+      for (let i = 0; i < 5; i++) {
+        console.count(i);
+      }
+    </script>
+  </body>
+</html>

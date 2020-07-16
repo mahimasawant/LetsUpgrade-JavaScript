@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>var,let,const</title>
+  </head>
+  <body>
+    <h2>Var,Let,Const difference with examples</h2>
+    <script>
+      //var
+      var wish = "happy bday";
+      function newFunction() {
+        var greet = "hello";
+      }
+      console.log(wish);
+      //console.log(greet); error: greet is not defined because its inside the function
+
+      //var can be redeclared and updated
+      var wish = "happy bday";
+      var wish = "happy sunday";
+      console.log(wish);
+
+      //problem with var
+      var greet = "good noon";
+      var times = 5;
+
+      if (times > 4) {
+        var greet = "good morning";
+      }
+      console.log(greet); //prints good morning instead greet is alredy defined i.e: good noon
+
+      //let
+      //let is block scoped
+      let hi = "good noon";
+      let times1 = 4;
+
+      if (times1 > 3) {
+        let wish1 = "happy bday";
+        console.log(wish1); // "happy bday"
+      }
+      console.log(wish1); // wish is not defined
+
+      //let can be updated
+      let name1 = "elon musk";
+      name1 = "narendra modi"; //updated
+      let name1 = "narendra modi"; //cannot redeclare throwss error
+      console.log(name1);
+
+      //const
+      //const are block spaced
+      //cannot be updated nor declared
+      const color = "black";
+      color = "blue"; // error: can not update
+
+      const fruit = "mango";
+      const fruit = "apple"; //error: cannot re-declare
+
+      //to declare a const object
+      const bye = {
+        message: "goodbye",
+        times: 4,
+      };
+      console.log((bye.message = "Hello"));
+    </script>
+  </body>
+</html>
