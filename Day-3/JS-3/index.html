@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grading System</title>
+  </head>
+  <body>
+    <h2>Students Grading System using conditional statements</h2>
+    <h4>Marks to Grade Calculater</h4>
+    <input type="number" id="percent" placeholder="enter your overall marks" />
+    <button onclick="calc()">Calculate</button>
+    <script>
+      function calc() {
+        var marks = document.getElementById("percent").value;
+        if (marks >= 95) {
+          console.log("your marks is " + marks + " and your grade is  A+");
+        } else if (marks <= 85 && marks > 80) {
+          console.log("your marks is " + marks + " and your grade is A");
+        } else if (marks <= 70 && marks > 80) {
+          console.log("your marks is " + marks + " and your grade is B");
+        } else if (marks <= 60 && marks > 70) {
+          console.log("your marks is " + marks + " and your grade is C");
+        } else {
+          console.log("your marks is " + marks + " and your grade is  D");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h2>Display OS name and Version</h2>
+
+    <input type="text" id="os" placeholder="enter OS name and Version" /><br />
+    <button onclick="osname()">submit</button>
+
+    <script>
+      function osname() {
+        var store = document.getElementById("os").value;
+        const word = store.split(" ");
+        let osnsme1 = word[0];
+        let osversion = word[1];
+        console.log(
+          "The OS name is " + word[0] + " and  the version is " + word[1]
+        );
+      }
+    </script>
+  </body>
+</html>
